@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.wishlistController">
+   <children>
+      <Rectangle fx:id="StoreBG" arcHeight="5.0" arcWidth="5.0" fill="#ab93bf" height="700.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="1209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="667.0" layoutX="996.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="197.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="123.0" layoutX="1016.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="159.0" />
+      <Text fill="#f2eeee" layoutX="1051.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*NAME*" wrappingWidth="90.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1015.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="598.0" layoutX="11.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="964.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="518.0" layoutX="27.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="929.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="44.0" layoutX="364.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="184.0" />
+      <Group layoutX="-152.0" layoutY="-35.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1171.0" layoutY="637.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1170.0" layoutY="458.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1170.0" layoutY="383.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1169.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Button fx:id="cartB" layoutX="1179.0" layoutY="237.0" mnemonicParsing="false" onAction="#goCart" prefHeight="43.0" prefWidth="134.0" text="MY CART" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="libraryB" layoutX="1180.0" layoutY="316.0" mnemonicParsing="false" onAction="#goLibrary" prefHeight="43.0" prefWidth="134.0" text="MY LIBRARY" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="wishlistB" layoutX="1178.0" layoutY="393.0" mnemonicParsing="false" onAction="#goWishlist" prefHeight="45.0" prefWidth="145.0" text="MY WISHLIST" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="supportB" layoutX="1184.0" layoutY="468.0" mnemonicParsing="false" onAction="#goSupport" prefHeight="43.0" prefWidth="134.0" text="SUPPORT" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="1183.0" layoutY="647.0" mnemonicParsing="false" onAction="#Logout" prefHeight="43.0" prefWidth="134.0" text="LOGOUT" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Text fx:id="wdnext" accessibleRole="BUTTON" fill="#f2eeee" layoutX="376.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MY WISHLIST" wrappingWidth="161.0">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="46.0" layoutX="594.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="262.0" />
+      <Text fx:id="wdnext1" accessibleRole="BUTTON" fill="#f2eeee" layoutX="616.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL  PAY (000)" wrappingWidth="224.1666259765625">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="872.0" layoutY="99.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="73.0" text="BUY ALL" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="32.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="53.0" layoutY="23.0" mnemonicParsing="false" onAction="#home" prefHeight="34.0" prefWidth="145.0" text="HOME" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="283.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button fx:id="profileB" layoutX="304.0" layoutY="22.0" mnemonicParsing="false" onAction="#goProfile" prefHeight="34.0" prefWidth="145.0" text="MY PROFILE" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="539.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="560.0" layoutY="22.0" mnemonicParsing="false" onAction="#goFriends" prefHeight="34.0" prefWidth="145.0" text="FRIENDS" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="785.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="806.0" layoutY="21.0" mnemonicParsing="false" onAction="#goSettings" prefHeight="34.0" prefWidth="145.0" text="SETTINGS" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <VBox fx:id="Wvboxleft" layoutX="39.0" layoutY="160.0" prefHeight="502.0" prefWidth="443.0">
+         <children>
+            <Pane fx:id="watchdogspaneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="420.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="30.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="21.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WATCH DOGS" wrappingWidth="134.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="290.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="161.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="800 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="347.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="56.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="darksoulspaneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="419.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="29.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DARK SOULS" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="290.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="155.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000 pesos" wrappingWidth="74.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="344.0" layoutY="23.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="57.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="outlastpaneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="417.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="27.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUTLAST" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="290.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="49.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="163.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="344.0" layoutY="23.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="56.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="dyinglightpaneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="418.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="28.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DYING LIGHT" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="290.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="163.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="550 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="346.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="56.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="overcookedpaneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="416.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="19.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OVERCOOKED" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="290.0" layoutY="25.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="49.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="163.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="250 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="344.0" layoutY="25.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="55.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox fx:id="Wvboxright" layoutX="512.0" layoutY="160.0" prefHeight="502.0" prefWidth="430.0">
+         <children>
+            <Pane fx:id="portal2paneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="414.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="0.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PORTAL 2" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="290.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="51.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="164.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="150 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="346.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="56.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="doompaneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="415.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="0.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOOM" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="289.0" layoutY="23.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="49.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="162.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="850 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="345.0" layoutY="22.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="56.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="dishonoredpaneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="416.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="0.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DISHONORED" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="289.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="51.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="163.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="347.0" layoutY="23.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="56.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="residentevil4paneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="415.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="0.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESIDENT EVIL 4" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="289.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="152.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2000 pesos" wrappingWidth="83.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="346.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="56.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="tekken7paneW">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="86.0" stroke="BLACK" strokeType="INSIDE" width="415.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="59.0" layoutX="16.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="215.0" />
+                  <Button layoutX="251.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="12.0" text="X" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEKKEN 7" wrappingWidth="204.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="290.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="49.0" text="BUY" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text accessibleRole="BUTTON" fill="#28ff89" layoutX="163.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="900 pesos" wrappingWidth="64.83334350585938">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="346.0" layoutY="24.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="57.0" text="DEAL" textFill="#720a5a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
