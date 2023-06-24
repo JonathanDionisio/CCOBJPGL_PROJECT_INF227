@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="settingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1200.0" style="-fx-background-color: #9c7eb5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.settingsController">
+   <children>
+      <Rectangle fx:id="settingBG" arcHeight="5.0" arcWidth="5.0" fill="#ab93bf" height="700.0" layoutX="-4.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1209.0" />
+      <Rectangle fx:id="ss2" arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="667.0" layoutX="995.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="197.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="123.0" layoutX="1032.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1014.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="598.0" layoutX="10.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="964.0" />
+      <Rectangle fx:id="shaptest" arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="570.0" layoutX="26.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="929.0" />
+      <Group layoutX="-153.0" layoutY="-37.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1171.0" layoutY="637.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1170.0" layoutY="458.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1170.0" layoutY="383.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1169.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Button fx:id="cartB" layoutX="1179.0" layoutY="237.0" mnemonicParsing="false" onAction="#goCart" prefHeight="43.0" prefWidth="134.0" text="MY CART" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="libraryB" layoutX="1180.0" layoutY="316.0" mnemonicParsing="false" onAction="#goLibrary" prefHeight="43.0" prefWidth="134.0" text="MY LIBRARY" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="wishlistB" layoutX="1178.0" layoutY="393.0" mnemonicParsing="false" onAction="#goWishlist" prefHeight="45.0" prefWidth="145.0" text="MY WISHLIST" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="supportB" layoutX="1184.0" layoutY="468.0" mnemonicParsing="false" onAction="#goSupport" prefHeight="43.0" prefWidth="134.0" text="SUPPORT" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="1183.0" layoutY="647.0" mnemonicParsing="false" onAction="#Logout" prefHeight="43.0" prefWidth="134.0" text="LOGOUT" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="31.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="52.0" layoutY="21.0" mnemonicParsing="false" onAction="#home" prefHeight="34.0" prefWidth="145.0" text="HOME" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="282.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button fx:id="profileB" layoutX="303.0" layoutY="20.0" mnemonicParsing="false" onAction="#goProfile" prefHeight="34.0" prefWidth="145.0" text="MY PROFILE" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="538.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="559.0" layoutY="20.0" mnemonicParsing="false" onAction="#goFriends" prefHeight="34.0" prefWidth="145.0" text="FRIENDS" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="784.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="805.0" layoutY="19.0" mnemonicParsing="false" onAction="#goSettings" prefHeight="34.0" prefWidth="145.0" text="SETTINGS" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="sb2" arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="484.0" layoutX="35.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" width="452.0" />
+      <Text fill="#f0ededbd" layoutX="172.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STORE CUSTOMIZATON" wrappingWidth="144.9999999999999">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Text>
+      <ColorPicker fx:id="bgc" layoutX="185.0" layoutY="334.0" onAction="#ColorChanger" prefHeight="25.0" prefWidth="117.0" />
+      <Rectangle fx:id="sb1" arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="45.0" layoutX="440.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
+      <Rectangle fx:id="sb3" arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="484.0" layoutX="507.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" width="436.0" />
+      <Group layoutX="522.0" layoutY="361.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="116.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="281.0" />
+            <Text fill="#f2eeee" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME:" wrappingWidth="110.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameField" layoutX="125.0" layoutY="15.0" prefHeight="25.0" prefWidth="260.0" />
+         </children>
+      </Group>
+      <Text fill="#f2eeee" layoutX="449.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SETTINGS" wrappingWidth="104.0">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="45.0" layoutX="614.0" layoutY="171.0" stroke="BLACK" strokeType="INSIDE" width="214.0" />
+      <Text fill="#f2eeee" layoutX="621.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCOUNT SETTINGS" wrappingWidth="214.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="45.0" layoutX="146.0" layoutY="171.0" stroke="BLACK" strokeType="INSIDE" width="206.0" />
+      <Text fill="#f2eeee" layoutX="163.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STORE SETTINGS" wrappingWidth="179.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#f0ededbd" layoutX="192.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRIMARY COLOR" wrappingWidth="104.0">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#f0ededbd" layoutX="187.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECONDARY COLOR" wrappingWidth="121.83335876464844">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Text>
+      <ColorPicker fx:id="secondaryCC" layoutX="185.0" layoutY="443.0" prefHeight="25.0" prefWidth="117.0" />
+      <Text fill="#f0ededbd" layoutX="198.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLOCK COLOR" wrappingWidth="90.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#f0ededbd" layoutX="687.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECURITY" wrappingWidth="67.99999999999989">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#f0ededbd" layoutX="635.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANGE PASS &amp; USERNAME" wrappingWidth="172.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Text>
+      <Group layoutX="522.0" layoutY="440.0">
+         <children>
+            <Rectangle fx:id="ss8" arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="116.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
+            <Text fill="#f2eeee" layoutX="9.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD:" wrappingWidth="110.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="passwordField" layoutX="129.0" layoutY="15.0" prefHeight="25.0" prefWidth="254.0" />
+         </children>
+      </Group>
+      <Button layoutX="606.0" layoutY="521.0" mnemonicParsing="false" onAction="#changeUsernamePassword" prefHeight="34.0" prefWidth="247.0" text="CHANGE PASS &amp; USERNAME" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="Mname" fill="#f2eeee" layoutX="1052.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*NAME*" wrappingWidth="90.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="123.0" fitWidth="134.0" layoutX="1027.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/applecat.jpg" />
+         </image>
+      </ImageView>
+      <ColorPicker fx:id="blockCC" layoutX="185.0" layoutY="542.0" prefHeight="25.0" prefWidth="117.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.friendsController">
+   <children>
+      <Rectangle fx:id="friendsBG" arcHeight="5.0" arcWidth="5.0" fill="#ab93bf" height="700.0" layoutX="-2.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1209.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="667.0" layoutX="995.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="197.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="123.0" layoutX="1032.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1014.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="598.0" layoutX="10.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="964.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="570.0" layoutX="26.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="929.0" />
+      <Group layoutX="-153.0" layoutY="-36.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1171.0" layoutY="637.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1170.0" layoutY="458.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1170.0" layoutY="383.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="65.0" layoutX="1169.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" width="161.0" />
+            <Button fx:id="cartB" layoutX="1179.0" layoutY="237.0" mnemonicParsing="false" onAction="#goCart" prefHeight="43.0" prefWidth="134.0" text="MY CART" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="libraryB" layoutX="1180.0" layoutY="316.0" mnemonicParsing="false" onAction="#goLibrary" prefHeight="43.0" prefWidth="134.0" text="MY LIBRARY" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="wishlistB" layoutX="1178.0" layoutY="393.0" mnemonicParsing="false" onAction="#goWishlist" prefHeight="45.0" prefWidth="145.0" text="MY WISHLIST" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="supportB" layoutX="1184.0" layoutY="468.0" mnemonicParsing="false" onAction="#goSupport" prefHeight="43.0" prefWidth="134.0" text="SUPPORT" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="1183.0" layoutY="647.0" mnemonicParsing="false" onAction="#Logout" prefHeight="43.0" prefWidth="134.0" text="LOGOUT" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="31.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="52.0" layoutY="22.0" mnemonicParsing="false" onAction="#home" prefHeight="34.0" prefWidth="145.0" text="HOME" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="282.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button fx:id="profileB" layoutX="303.0" layoutY="21.0" mnemonicParsing="false" onAction="#goProfile" prefHeight="34.0" prefWidth="145.0" text="MY PROFILE" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="538.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="559.0" layoutY="21.0" mnemonicParsing="false" onAction="#goFriends" prefHeight="34.0" prefWidth="145.0" text="FRIENDS" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="52.0" layoutX="784.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+      <Button layoutX="805.0" layoutY="20.0" mnemonicParsing="false" onAction="#goSettings" prefHeight="34.0" prefWidth="145.0" text="SETTINGS" textFill="#720a5a">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="Mname" fill="#f2eeee" layoutX="282.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JONATHAN DIONISIO" wrappingWidth="214.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="341.0" layoutX="35.0" layoutY="303.0" stroke="BLACK" strokeType="INSIDE" width="452.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="87.0" layoutX="282.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="94.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="87.0" layoutX="401.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="94.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="87.0" layoutX="517.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="94.0" />
+      <Group fx:id="yanyanF" layoutX="59.0" layoutY="363.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="83.0" />
+            <Text accessibleRole="BUTTON" fill="RED" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YANYAN" wrappingWidth="77.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="114.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4092 HOURS IN OVERCOOKED" wrappingWidth="165.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="366.0" layoutY="10.0" mnemonicParsing="false" onAction="#UnfY" prefHeight="30.0" prefWidth="28.0" text="X" textFill="#720a5a" fx:id="xY">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="yanyanv" layoutX="298.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewfriend" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="37.0" layoutX="59.0" layoutY="316.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+      <Text fill="#f2eeee" layoutX="71.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FRIENDS" wrappingWidth="94.0">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="341.0" layoutX="507.0" layoutY="303.0" stroke="BLACK" strokeType="INSIDE" width="436.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="37.0" layoutX="538.0" layoutY="317.0" stroke="BLACK" strokeType="INSIDE" width="226.0" />
+      <Text fill="#f2eeee" layoutX="546.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FRIEND SUGGESTION" wrappingWidth="214.3333740234375">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </Text>
+      <Group fx:id="ebisuF" layoutX="59.0" layoutY="431.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+            <Text accessibleRole="BUTTON" fill="#00ff11" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EBISU" wrappingWidth="59.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="116.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1293 HOURS IN WATCHDOGS" wrappingWidth="155.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="367.0" layoutY="11.0" mnemonicParsing="false" onAction="#UnfE" prefHeight="30.0" prefWidth="28.0" text="X" textFill="#720a5a" fx:id="xE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ebisuv" layoutX="299.0" layoutY="11.0" mnemonicParsing="false" onAction="#viewfriend" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="togeF" layoutX="59.0" layoutY="499.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
+            <Text accessibleRole="BUTTON" fill="#00ff11" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOGE" wrappingWidth="62.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="114.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54 HOURS IN DYING LIGHT" wrappingWidth="140.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="367.0" layoutY="11.0" mnemonicParsing="false" onAction="#UnfT" prefHeight="30.0" prefWidth="28.0" text="X" textFill="#720a5a" fx:id="xT">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="togev" layoutX="299.0" layoutY="11.0" mnemonicParsing="false" onAction="#viewfriend" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="prunseF" layoutX="59.0" layoutY="573.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="87.0" />
+            <Text accessibleRole="BUTTON" fill="RED" layoutX="15.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRUNSE" wrappingWidth="79.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="114.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9203 HOURS IN RESIDENT EVIL 4" wrappingWidth="179.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="368.0" layoutY="10.0" mnemonicParsing="false" onAction="#UnfP" prefHeight="30.0" prefWidth="28.0" text="X" textFill="#720a5a" fx:id="xP">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="prunsev" layoutX="300.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewfriend" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="prunseS" layoutX="525.0" layoutY="573.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="401.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+            <Text accessibleRole="BUTTON" fill="#f2eeee" layoutX="16.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRUNSE" wrappingWidth="121.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="145.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="98 HOURS IN DOOM" wrappingWidth="110.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="aP" layoutX="360.0" layoutY="10.0" mnemonicParsing="false" onAction="#addP" prefHeight="30.0" prefWidth="28.0" text="+" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="292.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="yanyanS" layoutX="522.0" layoutY="363.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="83.0" />
+            <Text accessibleRole="BUTTON" fill="WHITE" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YANYAN" wrappingWidth="77.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="114.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4092 HOURS IN OVERCOOKED" wrappingWidth="165.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="298.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="aY" layoutX="365.0" layoutY="10.0" mnemonicParsing="false" onAction="#addY" prefHeight="30.0" prefWidth="28.0" text="+" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="ebisuS" layoutX="522.0" layoutY="431.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+            <Text accessibleRole="BUTTON" fill="WHITE" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EBISU" wrappingWidth="59.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="116.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1293 HOURS IN WATCHDOGS" wrappingWidth="155.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="299.0" layoutY="11.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="aE" layoutX="365.0" layoutY="11.0" mnemonicParsing="false" onAction="#addE" prefHeight="30.0" prefWidth="28.0" text="+" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="togeS" layoutX="522.0" layoutY="499.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9882bf" height="54.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c7eb5" height="35.0" layoutX="7.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
+            <Text accessibleRole="BUTTON" fill="WHITE" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOGE" wrappingWidth="62.83335876464844">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="114.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54 HOURS IN DYING LIGHT" wrappingWidth="140.3333740234375">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="299.0" layoutY="11.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="61.0" text="VIEW" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="aT" layoutX="366.0" layoutY="11.0" mnemonicParsing="false" onAction="#addT" prefHeight="30.0" prefWidth="28.0" text="+" textFill="#720a5a">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <ImageView fitHeight="123.0" fitWidth="134.0" layoutX="1027.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/applecat.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="176.0" fitWidth="226.0" layoutX="51.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/applecat.jpg" />
+         </image>
+      </ImageView>
+      <Group fx:id="vyanyan" layoutX="281.0" layoutY="205.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="213.0" stroke="BLACK" strokeType="INSIDE" width="485.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/aki'spussy.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#f2eeee" layoutX="188.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YANYAN" wrappingWidth="94.0">
+               <font>
+                  <Font name="Agency FB Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="190.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4092 HOURS IN OVERCOOKED" wrappingWidth="245.98985290527344">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="closefriends" layoutX="445.0" layoutY="6.0" mnemonicParsing="false" onAction="#friendclose" prefHeight="30.0" prefWidth="28.0" style="-fx-background-color: FALSE;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="vebisu" layoutX="291.0" layoutY="215.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="213.0" stroke="BLACK" strokeType="INSIDE" width="485.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/bruno%20rip.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#f2eeee" layoutX="188.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EBISU" wrappingWidth="94.0">
+               <font>
+                  <Font name="Agency FB Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="190.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1293 HOURS IN WATCHDOGS" wrappingWidth="245.98985290527344">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="closefriends1" layoutX="445.0" layoutY="6.0" mnemonicParsing="false" onAction="#friendclose" prefHeight="30.0" prefWidth="28.0" style="-fx-background-color: FALSE;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="vtoge" layoutX="301.0" layoutY="225.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="213.0" stroke="BLACK" strokeType="INSIDE" width="485.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/bbjjba.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#f2eeee" layoutX="188.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOGE" wrappingWidth="94.0">
+               <font>
+                  <Font name="Agency FB Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="190.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="54 HOURS IN DYING LIGHT" wrappingWidth="245.98985290527344">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="closefriends11" layoutX="445.0" layoutY="6.0" mnemonicParsing="false" onAction="#friendclose" prefHeight="30.0" prefWidth="28.0" style="-fx-background-color: FALSE;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="vprunse" layoutX="311.0" layoutY="235.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bda3d3" height="213.0" stroke="BLACK" strokeType="INSIDE" width="485.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/beatboxSharkDev.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#f2eeee" layoutX="188.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRUNSE" wrappingWidth="94.0">
+               <font>
+                  <Font name="Agency FB Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eeee" layoutX="190.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9203 HOURS IN RESIDENT EVIL 4" wrappingWidth="270.98985290527344">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="closefriends111" layoutX="445.0" layoutY="6.0" mnemonicParsing="false" onAction="#friendclose" prefHeight="30.0" prefWidth="28.0" style="-fx-background-color: FALSE;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
